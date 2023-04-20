@@ -68,6 +68,6 @@ RUN microdnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs -y install \
 USER vault
 WORKDIR /vault
 
-EXPOSE 8200
-# ENTRYPOINT ["vault"]
-# CMD ["agent"]
+EXPOSE 8100
+ENTRYPOINT ["vault"]
+CMD ["agent"]
