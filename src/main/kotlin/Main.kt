@@ -46,7 +46,7 @@ fun genSecretKeyEntry(key: ByteArray? = null, algo: String = "AES"): SecretKeyEn
         eprintln("Generating random AES key")
         randomSecretKey()
     }
-//    val secretKey: SecretKey = if (key != null) SecretKeySpec(key, algo) else randomSecretKey()
+
     return SecretKeyEntry(secretKey)
 }
 
